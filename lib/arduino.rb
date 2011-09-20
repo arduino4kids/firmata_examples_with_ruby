@@ -1,6 +1,8 @@
 # gem install ruby-serialport if needed
 require "serialport"
 
+#using this class from
+#https://github.com/patcoll/ruby-firmata
 class Arduino
   # pin modes
   INPUT = 0
