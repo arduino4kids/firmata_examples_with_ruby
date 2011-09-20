@@ -27,6 +27,21 @@ led = Led.new(arduino, 13)
 #
 #motor.on ## watch the motor turn on
 #
+
+
+20.times do
+  servo.position = 180
+  servo.draw
+  motor.on
+  led.on
+  sleep(2)
+  servo.position = 1
+  servo.draw
+  motor.off
+  led.off
+  sleep(2)
+end
+
 debugger
 
 arduino.quit
